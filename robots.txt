@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://emelyasdates.pages.dev/sitemap.xml
+Sitemap: https://emelyasdates.pages.dev/sitemap_data.xml
