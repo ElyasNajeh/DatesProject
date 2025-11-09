@@ -1,0 +1,261 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fffdf5, #f5f3ea);
+    text-align: left;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+  background-color: ghostwhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 60px;
+  position: relative;
+}
+a:hover {
+  color: #111;
+  text-shadow: 0 0 8px #c6a04f;
+}
+
+header img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c6a04f;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 20px;
+  transition: 0.3s;
+}
+
+hr {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #b38728, #f0c75e, #b38728);
+  border: none;
+  margin: 0;
+  border-radius: 2px;
+}
+main {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+main p {
+  font-size: 28px;
+  color: #c6a04f;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main article {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main hr {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100vw - 17px);
+  height: 3px;
+  background: linear-gradient(to right, #b38728, #f0c75e, #b38728);
+  border: none;
+  margin: -5px 0;
+  border-radius: 2px;
+}
+
+.discover-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.discover-section h2 {
+  color: #c6a04f;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 35px;
+  background-color: #c6a04f;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  color: #111;
+  text-shadow: 0 0 8px #c6a04f;
+  background-color: #e6c35b;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 0;
+  color: #333;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer section {
+  width: 30%;
+}
+
+footer h2 {
+  color: #c6a04f;
+  font-size: 22px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+footer h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #b38728, #f0c75e, #b38728);
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+footer article {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #444;
+}
+
+footer ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #c6a04f;
+  transition: 0.3s;
+}
+#contactus a {
+  color: #000 ;
+}
+
+
+footer img {
+  vertical-align: middle;
+}
+footer .copyright {
+  text-align: right;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #777;
+  margin-right: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; 
+    background-position: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  footer section {
+    width: 80%;
+  }
+
+  footer h2::after {
+    margin: 6px auto 0;
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 80px;
+  background: linear-gradient(to bottom, #fffdf5, #f5f3ea);
+  font-family: "Poppins", sans-serif;
+}
+
+.products > div {
+  background-color: #ffffffd9;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(198, 160, 79, 0.3);
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(198, 160, 79, 0.5);
+}
+
+.products img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.products ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.products li:first-child {
+  color: #c6a04f;
+  font-weight: 600;
+  font-size: 18px;
+}

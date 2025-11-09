@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/Logo.png" alt="Logo" width="120" height="120">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#aboutus">About Us</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <p>Welcome to Em Elyas Dates</p>
+        <article>Yes, it is a <strong>business</strong>, but one built on <strong>honesty, trust, and
+                professionalism.</strong> We believe that true
+            quality begins with care, and from here, we began our <strong>journey with confidence and
+                sincerity.</strong></article>
+        <p>Discover our <a href="products.html" class="btn">Products!</a></p>
+        <hr>
+    </main>
+    <footer>
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <article>At <strong>Em Elyas Dates</strong>, we believe that authentic flavor makes the difference. <br>
+                We offer a variety of
+                <strong>dates, sweets, and pastries, all made with care, high quality,</strong> and a warm Palestinian
+                touch.
+            </article>
+        </section>
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><a href="https://mail.google.com/mail/u/0/?fs=1&to=elyasnajeh5@gmail.com&tf=cm"
+                        target="_blank">Contact Us via Email</a></li>
+                <li><a href="https://wa.me/970569728895" target="_blank">Contact Us via WhatsApp</a></li>
+                <li><a href="https://www.instagram.com/em_elyas_dates" target="_blank">Contact Us via Instagram</a></li>
+                <li><a href="https://snapchat.com/add/eemlyas" target="_blank">Contact Us via Snapchat</a></li>
+            </ul>
+        </section>
+        <section id="followus">
+            <h2>Follow Us</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/em_elyas_dates" target="_blank"><img src="images/instagram.png"
+                            alt="Instagram Logo" width="20" height="20"></a></li>
+                <li><a href="https://snapchat.com/add/eemlyas" target="_blank"><img src="images/Snapchat.png"
+                            alt="Snapchat Logo" width="20" height="20"></a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Em Elyas Dates. All rights reserved.</p>
+        </section>
+    </footer>
+    <script>
+        window.addEventListener("load", () => {
+            if (window.location.hash) {
+                history.replaceState(null, null, window.location.pathname);
+            }
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+
+</html>
