@@ -425,31 +425,4 @@ html[dir="rtl"] footer ul li::before {
     left: auto;
 }
 
-@media (max-width: 768px) {
-
-    footer {
-        flex-direction: column !important;
-        text-align: center !important;
-        align-items: center !important;
-    }
-
-    footer section {
-        text-align: center !important;
-    }
-
-    footer h2,
-    html[dir="rtl"] footer h2 {
-        text-align: center !important;
-    }
-
-    footer ul li,
-    html[dir="rtl"] footer ul li {
-        text-align: center !important;
-        padding-right: 0 !important;
-    }
-
-    html[dir="rtl"] footer ul li::before {
-        display: none !important;
-    }
-}
 
