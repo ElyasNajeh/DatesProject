@@ -432,3 +432,7 @@ html[dir="ltr"] #contactus {
     text-align: left !important;
 }
 
+html[dir="ltr"] footer * {
+    text-align: left !important;
+    direction: ltr !important;
+}
