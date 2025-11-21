@@ -1,3 +1,5 @@
+
+
 :root {
   --primary-gold: #c6a04f;
   --light-gold: #e6c35b;
@@ -12,7 +14,6 @@
   --shadow-medium: rgba(0, 0, 0, 0.12);
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +22,14 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+html[dir="rtl"] * {
+  direction: rtl;
 }
 
 body {
@@ -94,14 +103,15 @@ nav a:hover::after {
 hr {
   border: none;
   height: 2px;
-  background: linear-gradient(to right, 
-    transparent, 
-    var(--primary-gold) 30%, 
-    var(--primary-gold) 70%, 
-    transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-gold) 30%,
+    var(--primary-gold) 70%,
+    transparent
+  );
   margin: 0;
 }
-
 
 main {
   max-width: 1400px;
@@ -109,7 +119,6 @@ main {
   padding: 60px 40px;
 }
 
-/* Welcome Section */
 #welcome {
   text-align: center;
   padding: 40px 20px 60px;
@@ -184,8 +193,6 @@ main > h2 {
 
 #products ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 #products li {
@@ -229,8 +236,8 @@ footer h2 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
-  position: relative;
   padding-bottom: 8px;
+  position: relative;
 }
 
 footer h2::after {
@@ -252,7 +259,6 @@ footer article {
 
 footer ul {
   list-style: none;
-  padding: 0;
 }
 
 footer ul li {
@@ -284,11 +290,6 @@ footer a:hover {
 #followus ul {
   display: flex;
   gap: 15px;
-  padding: 0;
-}
-
-#followus ul li {
-  padding: 0;
 }
 
 #followus ul li::before {
@@ -316,7 +317,6 @@ footer .copyright {
 @media (max-width: 1024px) {
   #products {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
   }
 }
 
@@ -327,58 +327,20 @@ footer .copyright {
     gap: 15px;
   }
 
-  header img {
-    width: 100px;
-    height: 100px;
-  }
-
   nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
   }
 
-  nav a {
-    font-size: 16px;
-    padding: 6px 15px;
-  }
-
-  main {
-    padding: 40px 20px;
-  }
-
-  #welcome p {
-    font-size: 30px;
-  }
-
-  #welcome article {
-    font-size: 16px;
-    padding: 20px;
-  }
-
-  main > h2 {
-    font-size: 24px;
-  }
-
   #products {
     grid-template-columns: 1fr;
-    gap: 25px;
   }
 
   footer {
     flex-direction: column;
-    align-items: center;
     text-align: center;
     gap: 35px;
-  }
-
-  footer section {
-    max-width: 100%;
-  }
-
-  footer h2::after {
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   footer ul li {
@@ -394,38 +356,13 @@ footer .copyright {
   }
 }
 
-@media (max-width: 480px) {
-  header {
-    padding: 15px;
-  }
 
+@media (max-width: 480px) {
   header img {
     width: 80px;
     height: 80px;
   }
-
-  nav a {
-    font-size: 14px;
-    padding: 5px 12px;
-  }
-
-  #welcome p {
-    font-size: 26px;
-  }
-
-  main > h2 {
-    font-size: 20px;
-  }
-
-  #products img {
-    height: 220px;
-  }
-
-  footer {
-    padding: 30px 15px 15px;
-  }
 }
-
 
 a:focus,
 button:focus {
@@ -438,24 +375,15 @@ button:focus {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
-  
+
   html {
     scroll-behavior: auto;
   }
 }
+
 html[dir="rtl"] footer {
   flex-direction: row-reverse;
   text-align: right;
-}
-
-html[dir="rtl"] footer section {
-  direction: rtl;
-}
-
-html[dir="rtl"] footer h2::after {
-  left: auto;
-  right: 0;
-  transform: none;
 }
 
 html[dir="rtl"] footer ul li {
@@ -464,9 +392,10 @@ html[dir="rtl"] footer ul li {
 }
 
 html[dir="rtl"] footer ul li::before {
-  left: auto;
   right: 0;
+  left: auto;
 }
+
 .lang-switch {
   font-size: 16px;
   color: #c6a04f;
@@ -484,21 +413,11 @@ html[dir="rtl"] footer ul li::before {
   opacity: 1;
   transform: scale(1.05);
 }
-
-
-html[dir="rtl"] section#aboutus article {
-  direction: rtl;
-  text-align: right;
-  font-size: 18px;
-  color: var(--text-medium);
-  line-height: 1.8;
-  margin: 0 auto;
-  max-width: 700px;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 25px 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px var(--shadow-light);
+html[dir="rtl"] footer h2 {
+    text-align: right;
 }
 
-
-
+html[dir="rtl"] footer h2::after {
+    left: auto;
+    right: 0;
+}
