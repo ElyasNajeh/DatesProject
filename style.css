@@ -485,16 +485,20 @@ html[dir="rtl"] footer ul li::before {
   transform: scale(1.05);
 }
 
+
 html[dir="rtl"] section#aboutus article {
-  font-size: 17px;
-  font-weight: 400;
+  direction: rtl;
+  text-align: right;
+  font-size: 18px;
   color: var(--text-medium);
   line-height: 1.8;
-  text-align: center;
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 700px;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 25px 30px;
   border-radius: 15px;
   box-shadow: 0 4px 15px var(--shadow-light);
 }
+
+
+
