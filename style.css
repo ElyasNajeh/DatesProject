@@ -26,9 +26,13 @@ html[dir="rtl"] body {
   direction: rtl;
   text-align: right;
 }
-html[dir="rtl"] * {
+
+html[dir="rtl"] header,
+html[dir="rtl"] nav,
+html[dir="rtl"] footer {
   direction: rtl;
 }
+
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -379,20 +383,6 @@ button:focus {
   }
 }
 
-html[dir="rtl"] footer {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-
-html[dir="rtl"] footer ul li {
-  padding-right: 20px;
-  padding-left: 0;
-}
-
-html[dir="rtl"] footer ul li::before {
-  right: 0;
-  left: auto;
-}
 
 .lang-switch {
   font-size: 16px;
@@ -411,46 +401,55 @@ html[dir="rtl"] footer ul li::before {
   opacity: 1;
   transform: scale(1.05);
 }
+
+html[dir="rtl"] footer {
+    direction: rtl;
+}
+
 html[dir="rtl"] footer h2 {
     text-align: right;
 }
 
 html[dir="rtl"] footer h2::after {
-    left: auto;
     right: 0;
+    left: auto;
 }
+
+html[dir="rtl"] footer ul li {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] footer ul li::before {
+    right: 0;
+    left: auto;
+}
+
 @media (max-width: 768px) {
+
     footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 40px;
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center !important;
     }
 
     footer section {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    footer h2 {
         text-align: center !important;
     }
 
-    footer ul {
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-
-    footer ul li {
-        text-align: center;
-    }
-
-    html[dir="rtl"] footer * {
-        direction: rtl;
+    footer h2,
+    html[dir="rtl"] footer h2 {
         text-align: center !important;
+    }
+
+    footer ul li,
+    html[dir="rtl"] footer ul li {
+        text-align: center !important;
+        padding-right: 0 !important;
+    }
+
+    html[dir="rtl"] footer ul li::before {
+        display: none !important;
     }
 }
 
