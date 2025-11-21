@@ -1,179 +1,458 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="ar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Em Elyas Dates تقدم أجود أنواع تمر المجدول الفلسطيني والحلويات اليدوية الفاخرة المصنوعة بعناية وجودة عالية. استمتع بالمذاق الأصيل لفلسطين.">
-    <meta name="keywords"
-        content="Em Elyas Dates, تمر مجدول, تمر فلسطيني, حلويات فلسطينية, حلويات يدوية, تمور طبيعية, منتجات فلسطينية">
-    <meta name="google-site-verification" content="RyhO9DqiaYlmvi860ZpS4QoWw3MlXStkzEpxmh5Q2CY" />
+:root {
+  --primary-gold: #c6a04f;
+  --light-gold: #e6c35b;
+  --dark-gold: #a68838;
+  --bg-cream: #fffdf5;
+  --bg-light: #f9f7f0;
+  --text-dark: #2c2c2c;
+  --text-medium: #555;
+  --text-light: #888;
+  --white: #ffffff;
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.12);
+}
 
-    <meta property="og:title" content="Em Elyas Dates | تمور وحلويات فلسطينية فاخرة">
-    <meta property="og:description"
-        content="تذوّق النكهة الأصيلة لفلسطين — تمر مجدول فاخر وحلويات يدوية من Em Elyas Dates.">
-    <meta property="og:image" content="https://emelyasdates.pages.dev/images/Logo.png">
-    <meta property="og:url" content="https://emelyasdates.pages.dev/">
-    <meta property="og:type" content="website">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <title>Em Elyas Dates | الصفحة الرئيسية والمنتجات</title>
-    <link rel="icon" type="image/png" href="images/Logo.png">
-    <link rel="stylesheet" href="style.css">
-</head>
+html {
+  scroll-behavior: smooth;
+}
 
-<body>
-    <header>
-        <img src="images/Logo.png" alt="شعار Em Elyas Dates" width="120" height="120">
-        <nav>
-            <a href="#welcome">الرئيسية</a>
-            <a href="#products">المنتجات</a>
-            <a href="#aboutus">من نحن</a>
-            <a href="index.html" class="lang-switch">الإنجليزية 🇬🇧</a>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <section id="welcome">
-            <p>مرحباً بكم في Em Elyas Dates</p>
-            <article>
-                نعم، هو <strong>مشروع</strong>، لكنه قائم على <strong>الصدق، والثقة، والاحترافية.</strong>
-                نؤمن أن الجودة الحقيقية تبدأ بالعناية، ومن هنا بدأنا <strong>رحلتنا بثقة وإخلاص.</strong>
-            </article>
-        </section>
-        <hr>
-        <h2>اكتشف المذاق الأصيل لفلسطين من خلال منتجاتنا اليدوية</h2>
-        <section id="products">
-            <div>
-                <img src="images/SuperJambo.png" alt="تمر مجدول سوبر جامبو" width="300" height="300">
-                <ul>
-                    <li>الاسم: تمر مجدول سوبر جامبو</li>
-                    <li>السعر: 40 شيكل / 1 كغ</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/Large.png" alt="تمر مجدول كبير" width="300" height="300">
-                <ul>
-                    <li>الاسم: تمر مجدول كبير</li>
-                    <li>السعر: 30 شيكل / 1 كغ</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/BonBon.png" alt="تمر بون بون" width="300" height="300">
-                <ul>
-                    <li>الاسم: تمر بون بون</li>
-                    <li>السعر: 35 شيكل / 1 كغ</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/Rotab.png" alt="تمر رطب" width="300" height="300">
-                <ul>
-                    <li>الاسم: تمر رطب</li>
-                    <li>السعر: 25 شيكل / 1 كغ</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/DatesCake.png" alt="كيك التمر" width="300" height="300">
-                <ul>
-                    <li>الاسم: كيك التمر</li>
-                    <li>السعر: 20 شيكل / القطعة</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/DatesBread.png" alt="خبز التمر" width="300" height="300">
-                <ul>
-                    <li>الاسم: خبز التمر</li>
-                    <li>السعر: 5 شيكل / القطعة</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/DatesCupCake.png" alt="كب كيك التمر" width="300" height="300">
-                <ul>
-                    <li>الاسم: كب كيك التمر</li>
-                    <li>السعر: 3 شيكل / القطعة</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/CreamDessert.png" alt="حلاوة الجبن" width="300" height="300">
-                <ul>
-                    <li>الاسم: حلاوة الجبن</li>
-                    <li>السعر: 60 شيكل / 1 كغ</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/ChocolateCupCake.png" alt="كب كيك الشوكولاتة" width="300" height="300">
-                <ul>
-                    <li>الاسم: كب كيك الشوكولاتة</li>
-                    <li>السعر: 5 شيكل / القطعة</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/EnglishCake.png" alt="كيك إنجليزي" width="300" height="300">
-                <ul>
-                    <li>الاسم: الكيك الإنجليزي</li>
-                    <li>السعر: 20 شيكل / القطعة</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/DubaiChocolateDates.png" alt="تمر شوكولاتة دبي" width="300" height="300">
-                <ul>
-                    <li>الاسم: تمر شوكولاتة دبي</li>
-                    <li>السعر: 100 شيكل / 1 كغ</li>
-                </ul>
-            </div>
-            <div>
-                <img src="images/StuffedDates.png" alt="تمر محشو" width="300" height="300">
-                <ul>
-                    <li>الاسم: تمر محشو</li>
-                    <li>السعر: 80 شيكل / 1 كغ</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+html[dir="rtl"] * {
+  direction: rtl;
+}
 
-    <footer>
-        <section id="aboutus">
-            <h2>من نحن</h2>
-            <article>
-                في <strong>Em Elyas Dates</strong> نؤمن أن النكهة الأصيلة تصنع الفرق. نقدم مجموعة متنوعة من
-                <strong>التمور والحلويات والمخبوزات</strong> المصنوعة بعناية وجودة عالية ولمسة فلسطينية.
-            </article>
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, var(--bg-cream), var(--bg-light));
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+}
 
-        </section>
+header {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  box-shadow: 0 2px 15px var(--shadow-light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-        <section id="contactus">
-            <h2>تواصل معنا</h2>
-            <ul>
-                <li><a href="https://mail.google.com/mail/u/0/?fs=1&to=elyasnajeh5@gmail.com&tf=cm" target="_blank">عبر
-                        البريد الإلكتروني</a></li>
-                <li><a href="https://wa.me/970569728895" target="_blank">عبر واتساب</a></li>
-                <li><a href="https://www.instagram.com/em_elyas_dates" target="_blank">عبر إنستغرام</a></li>
-                <li><a href="https://snapchat.com/add/eemlyas" target="_blank">عبر سناب شات</a></li>
-            </ul>
-        </section>
+header img {
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(198, 160, 79, 0.3);
+  transition: transform 0.3s ease;
+}
 
-        <section id="followus">
-            <h2>تابعونا</h2>
-            <ul>
-                <li><a href="https://www.instagram.com/em_elyas_dates" target="_blank"><img src="images/instagram.png"
-                            alt="شعار إنستغرام" width="20" height="20"></a></li>
-                <li><a href="https://snapchat.com/add/eemelyas" target="_blank"><img src="images/Snapchat.png"
-                            alt="شعار سناب شات" width="20" height="20"></a></li>
-            </ul>
-            <p class="copyright">© 2025 Em Elyas Dates. جميع الحقوق محفوظة.</p>
-        </section>
-    </footer>
+header img:hover {
+  transform: scale(1.05);
+}
 
-    <script>
-        window.addEventListener("load", () => {
-            if (window.location.hash) {
-                history.replaceState(null, null, window.location.pathname);
-            }
-            window.scrollTo(0, 0);
-        });
-    </script>
-</body>
+nav {
+  display: flex;
+  gap: 30px;
+}
 
-</html>
+nav a {
+  text-decoration: none;
+  color: var(--primary-gold);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-gold);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover {
+  background-color: rgba(198, 160, 79, 0.1);
+  color: var(--dark-gold);
+}
+
+nav a:hover::after {
+  width: 60%;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-gold) 30%,
+    var(--primary-gold) 70%,
+    transparent
+  );
+  margin: 0;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+#welcome {
+  text-align: center;
+  padding: 40px 20px 60px;
+}
+
+#welcome p {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary-gold);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+#welcome article {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-medium);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--shadow-light);
+}
+
+main > hr {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+main > h2 {
+  text-align: center;
+  font-size: 28px;
+  color: var(--primary-gold);
+  margin: 40px 0;
+  font-weight: 600;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  padding: 20px 0;
+}
+
+#products > div {
+  background-color: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 4px 20px var(--shadow-light);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+#products > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px var(--shadow-medium);
+}
+
+#products img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+#products > div:hover img {
+  transform: scale(1.05);
+}
+
+#products ul {
+  list-style: none;
+}
+
+#products li {
+  padding: 8px 0;
+  font-size: 16px;
+  color: var(--text-medium);
+}
+
+#products li:first-child {
+  color: var(--primary-gold);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#products li:last-child {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px 40px 20px;
+  box-shadow: 0 -2px 15px var(--shadow-light);
+  margin-top: 60px;
+}
+
+footer section {
+  flex: 1;
+  max-width: 350px;
+  padding: 0 20px;
+}
+
+footer h2 {
+  color: var(--primary-gold);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+footer h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-gold);
+  border-radius: 2px;
+}
+
+footer article {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-medium);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+footer ul li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--primary-gold);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--primary-gold);
+  padding-left: 3px;
+}
+
+#followus ul {
+  display: flex;
+  gap: 15px;
+}
+
+#followus ul li::before {
+  display: none;
+}
+
+footer img {
+  transition: transform 0.3s ease;
+}
+
+footer a:hover img {
+  transform: scale(1.2);
+}
+
+footer .copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: var(--text-light);
+  border-top: 1px solid rgba(198, 160, 79, 0.2);
+}
+
+@media (max-width: 1024px) {
+  #products {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #products {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  footer ul li {
+    padding-left: 0;
+  }
+
+  footer ul li::before {
+    display: none;
+  }
+
+  #followus ul {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid var(--primary-gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html[dir="rtl"] footer {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] footer ul li {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+html[dir="rtl"] footer ul li::before {
+  right: 0;
+  left: auto;
+}
+
+.lang-switch {
+  font-size: 16px;
+  color: #c6a04f;
+  opacity: 0.85;
+  font-weight: 500;
+  border: 1px solid #c6a04f;
+  border-radius: 20px;
+  padding: 5px 12px;
+  transition: all 0.3s ease;
+}
+
+.lang-switch:hover {
+  background-color: #c6a04f;
+  color: white;
+  opacity: 1;
+  transform: scale(1.05);
+}
+html[dir="rtl"] footer h2 {
+    text-align: right;
+}
+
+html[dir="rtl"] footer h2::after {
+    left: auto;
+    right: 0;
+}
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    footer section {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    footer h2 {
+        text-align: center !important;
+    }
+
+    footer ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    footer ul li {
+        text-align: center;
+    }
+
+    html[dir="rtl"] footer * {
+        direction: rtl;
+        text-align: center !important;
+    }
+}
+
