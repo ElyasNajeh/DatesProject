@@ -1,3 +1,5 @@
+
+
 :root {
   --primary-gold: #c6a04f;
   --light-gold: #e6c35b;
@@ -424,5 +426,10 @@ html[dir="rtl"] footer ul li::before {
     right: 0;
     left: auto;
 }
-
-
+html[dir="ltr"] footer h2,
+html[dir="ltr"] footer section,
+html[dir="ltr"] footer ul li,
+html[dir="ltr"] #aboutus,
+html[dir="ltr"] #contactus {
+    text-align: left !important;
+}
