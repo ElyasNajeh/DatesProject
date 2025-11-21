@@ -1,5 +1,3 @@
-
-
 :root {
   --primary-gold: #c6a04f;
   --light-gold: #e6c35b;
@@ -433,3 +431,4 @@ html[dir="ltr"] #aboutus,
 html[dir="ltr"] #contactus {
     text-align: left !important;
 }
+
